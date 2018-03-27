@@ -1,0 +1,433 @@
+html {
+  font-size: 14px;
+}
+@font-face {
+    font-family: Rachel;
+    src: url('../content/fonts/Rachel_Roman.ttf');
+    font-style:normal;
+}
+@font-face {
+    font-family: Rachel;
+    src: url('../content/fonts/Rachel_italic.ttf');
+    font-style:italic;
+}
+@font-face {
+    font-family: Rockwell;
+    src: url('../content/fonts/ROCK.TTF');
+    font-style:normal;
+}
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 28px;
+  }
+}
+/*
+ * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
+ */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+.content{
+  margin-right:0px;
+}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+  .scroll{
+    /* display:none; */
+    top:50%;
+  }
+  .content{
+    margin-right:0px;
+  }
+  .hero{
+    padding-bottom:150px;
+    shadow:none;
+    border-radius:0;
+    border:none;
+  }
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+  .scroll{
+    display:none;
+  }
+  .hero{
+    padding-bottom:150px;
+  }
+  .content{
+    margin-right:0px;
+  }
+/* Styles */
+}
+
+@media only screen
+and (max-width : 400px)
+and (orientation : portrait) {
+  .scroll{
+    display:none;
+  }
+  .hero{
+    padding-bottom:150px;
+  }
+  .content{
+    margin-right:0px;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  .content{
+    margin-right:0px;
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+.content{
+  margin-right:0px;
+}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+.content{
+  margin-right:0px;
+}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+.content{
+  margin-right:0px;
+}
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+  .content{
+    margin-right:0px;
+  }
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+.content{
+  margin-right:0px;
+}
+}
+@media only screen and (min-width: 768px) {
+  .highlight-card{
+    background-color:rgba(29, 32, 41, 1);
+    margin:10px;
+    margin-top:100px;
+    margin-bottom:100px;
+    padding:30px;
+  }
+  .social{
+    padding-top:0px;
+  }
+.myname{
+  position:relative;
+  top:30px;
+}
+.scroll{
+  position:relative;
+  top:40%;
+}
+.hero-right{
+  font-size:24px;
+  font-weight:300;
+  color:rgba(239, 239, 239, 0.8);
+}
+.jumbotron >.col{
+  margin-right:0px;
+}
+.jumbotron img{
+  width:auto !important;
+  padding:20px;
+}
+}
+
+.hero{
+  min-height:90vh;
+  position:relative;
+  background: url('../content/images/main-back.png') 0 0 no-repeat;
+  background-size:contain;
+  background-position:bottom;
+  background-position: right;
+  color:rgba(233, 233, 233, 0.7);
+  margin-bottom:0px;
+  background-color:#ddd5c7 !important;
+}
+.hero h1{
+  font-family:Rachel, Helvetica;
+  font-style: italic;
+  color:rgba(29, 32, 41, 0.8);
+  /* font-size:100px; */
+}
+
+.hero-right{
+  font-size:18px;
+  font-weight:300;
+  color:rgba(29, 32, 41, 0.8);
+
+}
+.hero-right div{
+  border-top:3px solid rgba(239, 239, 239, 0.8);
+  border-bottom:1px solid rgba(203, 126, 144, 0.8);
+  padding-top:20px;
+  padding-bottom:30px;
+  width:260px;
+}
+.hero div{
+
+}
+.card{
+  position:relative;
+  top:-200px;
+  margin-left:30px;
+  margin-right:30px;
+  padding:0px;
+  border:none;
+  background:none;
+
+  color:rgba(239, 239, 239, 0.7);
+}
+.card h4{
+  font-family:Rockwell;
+  font-size:36px;
+  margin-top:20px;
+}
+.card-title{
+  font-family:Rockwell;
+  font-size:36px !important;
+  margin-top:20px;
+}
+.card img{
+  height:auto;
+  width:100%;
+  border-bottom:1px solid rgba(203, 126, 144, 0.8);
+  padding-bottom:10px;
+  margin-top:100px;
+}
+.card-block{
+  background:none;
+  padding-left:10px;
+  padding-right:10px;
+  border-bottom:3px solid rgba(239, 239, 239, 0.8);
+}
+.other-projs{
+  color:#ddd5c7;
+  margin-top:25px;
+}
+.other-projs:hover{
+  color:#cb7e90;
+}
+.read-more{
+  color:rgba(203, 126, 144, 0.8);
+  margin-left:5px;
+}
+.read-more:hover{
+  color:rgba(203, 126, 144, 1);
+}
+.projects{
+  background-color:#1d2029;
+}
+
+.card-caption{
+  text-transform:capitalize;
+  font-family:'SFUIDisplay',Helvetica;
+  font-weight:600;
+  font-size:14px;
+}
+.card-caption span{
+  color:rgba(203, 126, 144, 0.8);
+}
+.myname{
+  width:100%;
+  min-width:150px;
+}
+.scroll{
+  position:relative;
+  top:10%;
+  height:auto;
+  width:200px;
+}
+.scroll img{
+  width:32px;
+}
+.jumbotron{
+  background-color:transparent;
+  margin-bottom:0px;
+}
+.complex-section{
+  background-color:#ddd5c7;
+  color: rgba(29, 32, 41, 0.8) !important;
+}
+.highlight-section{
+  background-image: url('../content/images/uni.png');
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color:#ddd5c7;
+  overflow:hidden;
+}
+.highlight-card{
+  background-color:rgba(29, 32, 41, 1);
+  margin:10px;
+  margin-top:50px;
+  margin-bottom:50px;
+  padding:30px;
+}
+.content{
+  margin-right:-15px;
+  overflow-x:hidden;
+}
+.btn{
+  background-color:#cb7e90;
+  border-radius:0;
+  text-transform:uppercase;
+  font-family:'SFUIDisplay', 'SFUI', Helvetica;
+  color:rgba(29, 32, 41, 0.6);
+  font-size:12px;
+  font-weight:bold;
+  padding:20px;
+  padding-top:15px;
+  padding-bottom:15px;
+  margin-bottom:30px;
+}
+
+.btn:hover{
+  color:#efefef;
+}
+.jumbotron img{
+  width:100%;
+  margin-left:0px;
+}
+ieframe{
+
+}
+.category{
+  color:#ddd5c7;
+}
+a{
+  color:#ddd5c7;
+}
+a:hover{
+  color:#cb7e90;
+}
+.display-1{
+  color:#A23622 !important;
+}
+footer{
+  background-image: url("../content/images/footer-back.png")
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom:100px;
+  padding-top:50px;
+  color:rgba(29, 32, 41, 0.7);
+}
+
+h6{
+  position:relative;
+  top:-10px;
+  font-size:24px !important;
+}
+.navbar{
+  background-color:#2a2a2a;
+
+}
+.nav-link{
+
+}
+.navbar-brand{
+  font-size:18px;
+  font-family:Rockwell;
+}
+.naked-button{
+  font-size:12px;
+  text-transform:uppercase;
+  color:#cb7e90 !important;
+  font-family:'SFUIDisplay','SFUI',Helvetica;
+  font-weight:bold;
+  margin:20px;
+
+}
+.social{
+  padding-top:50px;
+}
+
+.social a{
+  color:#cb7e90 !important;
+  padding:10px;
+  font-size:20px;
+}
+.shapes {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.word {
+	position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 0 0.25em 0;
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    grid-area: title;
+    /* font-size: 10vw;
+    font-weight: 400; */
+}
+
+.word span {
+	display: block;
+	position: relative;
+	flex: none;
+	white-space: pre;
+}
